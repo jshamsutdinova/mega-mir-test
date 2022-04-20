@@ -1,0 +1,143 @@
+.block {
+    margin: 40px 90px 0px 90px;
+}
+
+.block__title {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.block__title--img {
+    padding-bottom: 30px;
+    width: 371px;
+    height: 55px;
+    background: url("/img/sets/set_title.png") no-repeat center center;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.card__image {
+    width: 266px;
+    height: 231px;
+
+    img {
+        // display: block;
+        // max-width: 100%;
+        // max-height: 100%;
+    }
+}
+
+h4 {
+    margin: 12px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card__options {
+    font-size: 14px;
+    text-align: center;
+}
+
+.row__price {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.card__price {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.btn__add {
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    background-color: transparent;
+}
+
+.btn__add:hover {
+    transform: translateY(-5px);
+}
+
+.card__btn {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    .btn__cart {
+        width: 193px;
+        height: 40px;
+        background-color: #fd4f10;
+        border-radius: 4px;
+        border: none;
+    
+        text-align: center;
+        font-size: 15px;
+        line-height: 0.86;
+        color: white;
+        text-transform: uppercase;
+    
+        cursor: pointer;
+        transition: background-color font-weight 0.2s ease-in;
+    }
+    
+    .btn__cart:hover {
+        background-color: #f72525;
+        font-weight: 600;
+    }
+
+    .btn__cart::after {
+        content: "";
+        display: inline-block;
+        vertical-align: sub;
+        width: 22px;
+        height: 20px;
+        margin-left: 28px;
+        background-image: url('/img/icons/cart_white.png');
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+}
+
+
+.btn__card img {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: sub;
+}
+
+.block__paginator {
+    display: flexbox;
+    text-align: center;
+
+    img {
+        margin: 0 10px;
+    }
+}
+
+.btn__arrow {
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.btn__arrow:hover {
+    transform: translateY(-3px);
+}
+
+
+
+@media screen and (min-width:1500px) and (max-width:1920px) {
+    .block {
+        margin: 10px calc(100px + 10%);
+    }
+}
