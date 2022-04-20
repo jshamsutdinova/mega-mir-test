@@ -1,0 +1,46 @@
+.slider {
+    width: auto;
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.pagination {
+    position: absolute;
+    bottom: 50px;
+    left: 150px;
+    right: 150px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("/img/slider/curcle.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.discont {
+    width: 144px;
+    height: 144px;
+
+    position: absolute;
+    bottom: 425px;
+    left: 780px;
+    top: 108px;
+    right: 810px;
+}
+
+// .slider:first-child {
+//     content: "";
+//     display: inline-block;
+//     vertical-align: sub;
+//     width: 1611px;
+//     height: 319px;
+//     margin-right: 7px;
+//     background-image: url('/img/slider/pagination.png');
+//     background-repeat: no-repeat;
+//     background-size: initial;
+// }
