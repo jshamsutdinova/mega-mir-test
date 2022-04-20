@@ -1,0 +1,32 @@
+.block__about {
+    margin: 40px 90px 0px 90px;
+
+}
+
+.block__title--img--about {
+    padding-bottom: 30px;
+    width: 900px;
+    height: 70px;
+    background: url("/img/about/about_title.png") no-repeat center center;
+}
+
+.about__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__header {
+    color: #32505a;
+    font-size: 20px;
+}
+
+@media screen and (min-width:1500px) and (max-width:1920px) {
+    .block__about {
+        margin: 10px calc(100px + 10%);
+        padding-top: 40px;
+    }
+
+    .content {
+        margin: 0 220px;
+    }
+}
