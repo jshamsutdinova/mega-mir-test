@@ -1,46 +1,89 @@
 .slider {
-    width: auto;
     position: relative;
+    width: 100%;
+    max-width: 1920px;
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
 
-    img {
-        display: block;
-        width: 100%;
+.slider .btn__more {
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    transform: translate(-40%, -50%);
+
+    width: 180px;
+    height: 40px;
+
+    background-color: #fd4f10;
+    border: none;
+    border-radius: 4px;
+
+    text-transform: uppercase;
+    color: white;
+
+    cursor: pointer;
+    transition: background-color font-weight 0.2s ease-in;
+}
+
+.slider .btn__more:hover {
+    background-color: #f72525;
+    font-weight: 600;
+}
+
+.btn__paginator {
+    position: absolute;
+
+    background-color: transparent;
+    border: none;
+
+    width: 50px;
+    height: 40px;
+
+    cursor: pointer;
+
+    img:hover {
+        transform: translateY(5px);
     }
 }
 
-.pagination {
-    position: absolute;
-    bottom: 50px;
-    left: 150px;
-    right: 150px;
-
-    width: 50px;
-    height: 50px;
-
-    background-image: url("/img/slider/curcle.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.btn__paginator:hover {
+    border: #f72525;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
 }
 
-.discont {
-    width: 144px;
-    height: 144px;
-
-    position: absolute;
-    bottom: 425px;
-    left: 780px;
-    top: 108px;
-    right: 810px;
+.btn__paginator--left {
+    transform: rotate(180deg);
+    right: 95%;
+    bottom: 50%;
 }
 
-// .slider:first-child {
-//     content: "";
-//     display: inline-block;
-//     vertical-align: sub;
-//     width: 1611px;
-//     height: 319px;
-//     margin-right: 7px;
-//     background-image: url('/img/slider/pagination.png');
-//     background-repeat: no-repeat;
-//     background-size: initial;
-// }
+.btn__paginator--right {
+    right: 2%;
+    bottom: 50%;
+    img:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.slider__paginator {
+    position: relative;
+    bottom: 300px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10%;
+    left: 47%;
+
+    .dot {
+        width: 16px;
+        height: 16px;
+        margin: 0 10px;
+    }
+}
