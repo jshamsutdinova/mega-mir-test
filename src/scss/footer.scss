@@ -1,5 +1,5 @@
 footer {
-    height: 407px;
+    height: 410px;
     margin-top: 100px;
     background-color: #1a2d34;
 }
@@ -21,7 +21,7 @@ footer {
     line-height: 25px;
 
     a {
-        font-size: 18px;
+        font-size: 16px;
         color: aliceblue;
         font-weight: 600;
     }
@@ -38,7 +38,7 @@ footer {
 .footer__item--name  {
     color: aliceblue;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .sets--menu {
@@ -86,6 +86,7 @@ footer {
 
 .footer--media > a > img {
     padding: 0 8px;
+    opacity: 0.5;
 }
 
 
